@@ -18,10 +18,22 @@ document.body.children[0].appendChild(img)
 document.body.children[0].appendChild(h2)
 
 
+// 2
+let divs = document.querySelectorAll(".divs")
+
+let p = document.createElement("p")
+p.classList.add("text")
+p.textContent = ("hello")
+
+document.body.children[1].appendChild(p)
 
 
+// 3
+let a = document.createElement("a")
+a.textContent = "google link"
+a.href = "https://google.com"
+a.target = "blank"
+a.classList.add("link")
+a.classList.replace("link", "newclass")
 
-
-
-
-
+document.body.children[4].appendChild(a)
