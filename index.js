@@ -21,11 +21,15 @@ document.body.children[0].appendChild(h2)
 // 2
 let divs = document.querySelectorAll(".divs")
 
-let p = document.createElement("p")
-p.classList.add("text")
-p.textContent = ("hello")
+divs.forEach(div => {
+    let p = document.createElement("p")
+    p.classList.add("text")
+    p.textContent = ("hello")
+    
+    div.appendChild(p)
+})
 
-document.body.children[1].appendChild(p)
+
 
 
 // 3
